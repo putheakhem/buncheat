@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  num_date: 1
+  description: MyString
+  title: MyString
+  location_status: false
+  history: MyString
+
+two:
+  num_date: 1
+  description: MyString
+  title: MyString
+  location_status: false
+  history: MyString
