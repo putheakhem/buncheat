@@ -1,6 +1,16 @@
 Rails.application.routes.draw do
-  resources :pictures
-  resources :events
+# pictures routes
+  get 'pictures/list'
+  get 'pictures/new'
+  post 'pictures/create'
+  patch 'pictures/update'
+  get 'pictures/list'
+  get 'pictures/show'
+  get 'pictures/edit'
+  get 'pictures/delete'
+  get 'pictures/update'
+  get 'pictures/show_events'
+
   # get 'sessions/new'
   #
   # get 'sessions/create'
