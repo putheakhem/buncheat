@@ -6,6 +6,11 @@ class Events < ActiveRecord::Migration
          t.column :title, :text
          t.column :created_at, :timestamp
       end
+     Event.create :name => "Khmer New Year"
+     Event.create :name => "Pchum Ben"
+     Event.create :name => "Mek Bochea"
+     Event.create :name => "Pisak Bochea"
+     Event.create :name => "KaThen"
    end
 
    def self.down

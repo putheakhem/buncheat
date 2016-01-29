@@ -1,4 +1,4 @@
-class PictureController < ApplicationController
+class PicturesController < ApplicationController
 
 
   def create
@@ -7,7 +7,7 @@ class PictureController < ApplicationController
       redirect_to :action => 'list'
     else
       @events = Event.all
-      reder :action => 'new'
+      render :action => 'new'
     end
   end
 

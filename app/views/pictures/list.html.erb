@@ -1,0 +1,14 @@
+<% if @pictures.blank? %>
+  <p>There are not any pictures currently in the system </p>
+<% else %>
+  <p> These are the current pictures in our system </p>
+
+<ul id = "pictures" >
+  <% @pictures.each do |picture| %>
+  <li> <% link_to picture.name, {:action => 'show', :id => picture.id} %></li>
+  <% end %>
+</ul>
+
+<% end %>
+
+<p><%= link_to "Add new Picture", {:action => 'new' }%></p>

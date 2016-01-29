@@ -3,6 +3,7 @@ class Pictures < ActiveRecord::Migration
       create_table :pictures do |t|
          t.column :name, :string, :limit => 32, :null => false
          t.column :description, :text
+         t.column :event_id, :integer
          t.column :created_at, :timestamp
       end
    end

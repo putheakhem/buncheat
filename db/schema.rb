@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20160129080001) do
   create_table "pictures", force: :cascade do |t|
     t.string   "name",        limit: 32, null: false
     t.text     "description"
+    t.integer  "event_id"
     t.datetime "created_at"
   end
 

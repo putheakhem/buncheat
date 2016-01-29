@@ -1,0 +1,14 @@
+<h1>Add New Picture</h1>
+
+<%= form_tag :action => 'create', class: "navbar-form navbar-left search-form" do %>
+  <p> <label for = "picture_name"> Name </label>:
+    <%= text_field 'pictures', 'name' %>
+  </p>
+  <p><label for = "book_description">Description</label><br/>
+  <%= text_area 'books', 'description' %></p>
+  <p><label for = "picture_events_id">Event</label>:
+
+  <%= collection_select(:pictures, :event_id, @events, :id, :name, prompt: true) %></p>
+<%= submit_tag "Create" %>
+<% end %>
+<% link_to 'Back', {:ation => 'list'} %>
