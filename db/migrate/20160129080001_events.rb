@@ -3,14 +3,13 @@ class Events < ActiveRecord::Migration
       create_table :events do |t|
          t.column :title, :string, :limit => 32, :null => false
          t.column :number_date, :integer
-         t.column :title, :text
          t.column :created_at, :timestamp
       end
-     Event.create :name => "Khmer New Year"
-     Event.create :name => "Pchum Ben"
-     Event.create :name => "Mek Bochea"
-     Event.create :name => "Pisak Bochea"
-     Event.create :name => "KaThen"
+     Event.create :title => "Khmer New Year"
+     Event.create :title => "Pchum Ben"
+     Event.create :title => "Mek Bochea"
+     Event.create :title => "Pisak Bochea"
+     Event.create :title => "KaThen"
    end
 
    def self.down

@@ -17,9 +17,8 @@ ActiveRecord::Schema.define(version: 20160129080001) do
   enable_extension "plpgsql"
 
   create_table "events", force: :cascade do |t|
-    t.string   "name",        limit: 32, null: false
+    t.string   "title",       limit: 32, null: false
     t.integer  "number_date"
-    t.text     "title"
     t.datetime "created_at"
   end
 
